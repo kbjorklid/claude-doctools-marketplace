@@ -115,3 +115,7 @@ flowchart TD
 ## Colors
 
 When selecting colors, make sure text is dark if background is light, and text is light if background is dark. For example, if you have selected a light peach as the color for a diagram element, make sure that the text written in that diagram element is dark (black/close to black).
+
+## Syntax guidance
+
+When possible - and not otherwise adviced by the user / context - use UML syntax.

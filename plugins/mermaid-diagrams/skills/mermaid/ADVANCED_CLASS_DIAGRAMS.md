@@ -96,7 +96,76 @@ The documentation is light on which CSS properties are supported. These are know
 - **font-style**: (e.g., italic)
 - **font-weight**: (e.g., bold)
 
-## 3. Attribute and Method Parameter Styles
+## 3. Documenting Relationships: Labels and Cardinality
+
+Professional class diagrams should clearly document the nature and multiplicity of relationships. While Mermaid doesn't require labels or cardinality, adding them significantly improves diagram readability and documentation value.
+
+### When to Add Relationship Labels
+
+Add a label when the relationship type isn't immediately obvious from the class names or relationship arrow alone.
+
+**Good practice - labels add clarity:**
+```mermaid
+classDiagram
+    Customer "1" --> "0..*" Order : places
+    Order "*" --> "1" Product : contains
+    Employee "0..*" --> "1" Department : works in
+    Book "*" --> "1..*" Author : written by
+```
+
+**Labels are less necessary when obvious:**
+```mermaid
+classDiagram
+    %% Inheritance is clear from the arrow type
+    User <|-- AdminUser
+
+    %% Composition strongly implies "has a"
+    Car *-- Engine
+```
+
+### When to Specify Cardinality
+
+**Always specify cardinality except when:**
+- Both sides are exactly "1" (though showing "1" -- "1" is clearer for documentation)
+- The relationship is inheritance (`<|--`), realization (`..|>`), or dependency (`..>`), which don't typically have cardinality
+
+**Common cardinality patterns:**
+
+```mermaid
+classDiagram
+    Customer "1" --> "0..*" Order : places
+    Student "*" --> "*" Course : enrolls in
+    User "1" --> "0..1" Profile : has
+    Order "1" *-- "1..*" OrderItem : contains
+    Employee "1" --> "1" WorkStation : assigned to
+```
+
+### Cardinality Reference
+
+The following cardinality notations are supported:
+
+- `1` - Exactly one (mandatory)
+- `0..1` - Zero or one (optional)
+- `1..*` - One or more (at least one required)
+- `*` or `0..*` - Zero or more (fully optional)
+- `n` - Exactly n instances (where n > 1)
+- `0..n` - Zero to n instances (where n > 1)
+- `1..n` - One to n instances (where n > 1)
+
+### Reading Cardinality
+
+Cardinality is read from the perspective of each class:
+
+```mermaid
+classDiagram
+    Customer "1" --> "0..*" Order : places
+```
+
+**Read as:**
+- "Each Customer can place zero or more Orders"
+- "Each Order is placed by exactly one Customer"
+
+## 4. Attribute and Method Parameter Styles
 
 Mermaid supports three styles for defining attributes and method parameters. **Use UML style unless the user specifies otherwise.**
 
@@ -157,7 +226,7 @@ class UserService {
 
 **Note:** For generic types in Java/C# style, use tilde notation: `List~User~ users`. For UML style with generics: `users : List~User~`.
 
-## 4. Member Classifiers & Visibility
+## 5. Member Classifiers & Visibility
 
 - Mark methods as static or abstract when appropriate
 
@@ -215,7 +284,7 @@ class MyAbstractClass {
 }
 ```
 
-## 5. UML Constraints on Properties and Methods
+## 6. UML Constraints on Properties and Methods
 
 UML supports constraint notation to add metadata about properties and methods. Constraints are typically shown in curly braces, such as `{readOnly}`, `{unique}`, or `{ordered}`.
 
@@ -258,7 +327,7 @@ class UserService {
 }
 ```
 
-## 6. Syntax Traps & Critical Workarounds
+## 7. Syntax Traps & Critical Workarounds
 
 These are the most common "gotchas" that break diagrams and are not immediately obvious.
 

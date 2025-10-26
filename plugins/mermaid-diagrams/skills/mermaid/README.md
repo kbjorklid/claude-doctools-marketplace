@@ -13,32 +13,4 @@ This skill uses documentation from [Mermaid.js](https://mermaid.js.org/), which 
 
 The full MIT License text is available in `mermaid_docs/LICENSE`.
 
-## Supported Diagram Types
-
-- Architecture Diagrams
-- Block Diagrams
-- C4 Diagrams
-- Class Diagrams
-- Entity Relationship Diagrams (ERD)
-- Flowcharts
-- Gantt Charts
-- Git Graphs
-- Kanban Boards
-- Mind Maps
-- Packet Diagrams
-- Pie Charts
-- Quadrant Charts
-- Radar Charts
-- Requirement Diagrams
-- Sankey Diagrams
-- Sequence Diagrams
-- State Diagrams
-- Timelines
-- Treemaps
-- User Journey Diagrams
-- XY Charts
-- ZenUML Sequence Diagrams
-
-## Documentation
-
 All Mermaid.js documentation is located in the `mermaid_docs/` directory and is sourced from the official Mermaid.js project repository.

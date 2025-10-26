@@ -1,0 +1,8 @@
+{
+  "name": "mermaid-diagrams",
+  "description": "Expert guide for creating and modifying Mermaid.js diagrams including flowcharts, sequence diagrams, class diagrams, Gantt charts, state diagrams, ERDs, timelines, and more",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kalle Björklid"
+  }
+}

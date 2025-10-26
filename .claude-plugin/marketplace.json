@@ -1,0 +1,23 @@
+{
+  "name": "mermaid-marketplace",
+  "owner": {
+    "name": "Kalle Björklid"
+  },
+  "metadata": {
+    "description": "Marketplace for Mermaid diagram creation plugins",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "mermaid-diagrams",
+      "description": "Expert guide for creating and modifying Mermaid.js diagrams including flowcharts, sequence diagrams, class diagrams, Gantt charts, state diagrams, ERDs, timelines, and more",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kalle Björklid"
+      },
+      "source": "./plugins/mermaid-diagrams",
+      "category": "development",
+      "keywords": ["mermaid", "diagrams", "flowcharts", "visualization", "uml", "documentation"]
+    }
+  ]
+}

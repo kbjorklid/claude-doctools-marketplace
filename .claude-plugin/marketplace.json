@@ -1,10 +1,10 @@
 {
-  "name": "mermaid-marketplace",
+  "name": "kbjorklid",
   "owner": {
     "name": "Kalle Björklid"
   },
   "metadata": {
-    "description": "Marketplace for Mermaid diagram creation plugins",
+    "description": "Marketplace for Kalle Björklid's plugins",
     "version": "1.0.0"
   },
   "plugins": [

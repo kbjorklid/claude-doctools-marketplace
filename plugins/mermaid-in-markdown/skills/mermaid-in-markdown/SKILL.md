@@ -1,6 +1,6 @@
 ---
 name: rich-markdown
-description: Guide for how to use Mermaid.js diagrams and charts in markdown files to visualize data. Use always when editing markdown files
+description: Guide for how to use Mermaid.js diagrams and charts in markdown files to visualize software design and architecture, data models, project management items, data analysis results, plans and ideation results, and technical/network protocols. ALWAYS use when editing or creating markdown / .md files.
 allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
@@ -39,3 +39,6 @@ Use when brainstorming concepts, organizing ideas hierarchically, or documenting
 **[Technical/Network Protocols](./TECHNICAL_NETWORK_PROTOCOLS.md)**
 Use when documenting low-level technical details like packet structures, network protocols, or version control workflows like git branching strategies.
 
+## Other notes
+
+If there is a skill specifically designed for mermaid.js diagram editing/creation, make sure to use that skill when creating the diagrams.

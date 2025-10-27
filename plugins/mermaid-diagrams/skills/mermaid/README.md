@@ -1,7 +1,5 @@
 # Mermaid.js Diagram Editor Skill
 
-This skill provides expert guidance for creating and modifying Mermaid.js diagrams including flowcharts, sequence diagrams, class diagrams, Gantt charts, state diagrams, ERDs, timelines, and more.
-
 ## Documentation Attribution
 
 This skill uses documentation from [Mermaid.js](https://mermaid.js.org/), which is licensed under the MIT License.

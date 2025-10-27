@@ -1,6 +1,6 @@
 ---
-name: mermaid
-description: Expert guide for creating and modifying Mermaid.js diagrams including flowcharts, sequence diagrams, class diagrams, Gantt charts, state diagrams, ERDs, timelines, and more. Activate when user requests diagram creation, flowchart design, visualization of processes/data/architecture, system documentation, or when working with .mmd files or mermaid code blocks (mermaid blocks inside markdown files).
+name: mermaid-diagrams
+description: Expert guide for creating and modifying Mermaid.js diagrams. Supports all diagram types including architecture diagrams, block diagrams, C4 diagrams, class diagrams, ERDs, flowcharts, Gantt charts, git graphs, kanban boards, mind maps, packet diagrams, pie charts, quadrant charts, radar charts, requirement diagrams, Sankey diagrams, sequence diagrams, state diagrams, timelines, treemaps, user journey diagrams, XY charts, and ZenUML. Activate when user requests diagram creation, visualization of processes/data/architecture, system documentation, or when working with .mmd files or mermaid code blocks in markdown files.
 allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 

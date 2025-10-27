@@ -35,11 +35,9 @@ The order in which you define relationships can influence the final layout. Ther
 
 This "top-down" definition can often help the dagre layout engine make more logical groupings.
 
-## 2. Advanced Styling with classDef
+## 2. Styling of abstract and interface classes
 
 Mermaid does not automatically style stereotypes like <<abstract>> or <<interface>>. You must simulate this manually using classDef.
-
-### Simulate Abstract Classes and Interfaces
 
 The standard UML practice is to show abstract class names in italics and interface names with a stereotype. You can create classDef styles for these and apply them.
 
@@ -95,6 +93,10 @@ The documentation is light on which CSS properties are supported. These are know
 - **stroke-width**: The border thickness.
 - **font-style**: (e.g., italic)
 - **font-weight**: (e.g., bold)
+
+### Color usage
+
+Do not use colors by default. If coloring is explicitly requested, use muted colors.
 
 ## 3. Documenting Relationships: Labels and Cardinality
 
@@ -288,44 +290,40 @@ class MyAbstractClass {
 
 UML supports constraint notation to add metadata about properties and methods. Constraints are typically shown in curly braces, such as `{readOnly}`, `{unique}`, or `{ordered}`.
 
-### Adding Constraints to Properties
-
 To add UML constraints in Mermaid, use numeric entity codes to escape the curly braces:
 - `#123;` for opening brace `{`
 - `#125;` for closing brace `}`
 
-**Common Constraint Examples:**
-
-```mermaid
-classDiagram
-class Product {
-    +id : int #123;readOnly#125;
-    +sku : string #123;readOnly, unique#125;
-    +tags : List~String~ #123;ordered#125;
-    +price : decimal
-    -internalCode : string #123;frozen#125;
-}
-```
-
-**Standard UML Constraints:**
-- `{readOnly}` - Property cannot be modified after initialization
-- `{unique}` - Each instance must have a unique value
-- `{ordered}` - Collection maintains insertion order
-- `{frozen}` - Value cannot change after object creation
-- `{derived}` - Value is calculated from other properties
-
-### Adding Constraints to Methods
-
-Constraints can also be applied to methods:
+**Example with Both Property and Method Constraints:**
 
 ```mermaid
 classDiagram
 class UserService {
+    +id : int #123;readOnly#125;
+    +sku : string #123;readOnly, unique#125;
+    +tags : List~String~ #123;ordered#125;
     +login(username: string, password: string) User #123;synchronized#125;
     +getCurrentUser() User #123;cached#125;
-    +validateEmail(email: string) bool #123;static#125;
 }
 ```
+
+**Custom Constraint Example:**
+
+You can also define custom constraints:
+
+```mermaid
+classDiagram
+class Employee {
+    +name : string #123;length > 0#125;
+    +age : int #123;age >= 18 and age <= 65#125;
+    +salary : decimal #123;salary > 0#125;
+```
+
+**Typical UML Constraints:**
+- `{readOnly}` - Property cannot be modified after initialization. Use sparingly, only to highlight immutability where necessary.
+- `{unique}` - Each instance must have a unique value
+- `{ordered}` - Collection maintains insertion order
+- `{id}` - Part of object's unique identifier. Use only when the identifier consists of multiple attributes.
 
 ## 7. Syntax Traps & Critical Workarounds
 

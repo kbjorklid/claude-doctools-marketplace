@@ -5,19 +5,49 @@
   },
   "metadata": {
     "description": "Marketplace for Kalle Björklid's plugins",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "plugins": [
     {
       "name": "mermaid-diagrams",
       "description": "Expert guide for creating and modifying Mermaid.js diagrams including flowcharts, sequence diagrams, class diagrams, Gantt charts, state diagrams, ERDs, timelines, and more",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "author": {
         "name": "Kalle Björklid"
       },
       "source": "./plugins/mermaid-diagrams",
       "category": "development",
-      "keywords": ["mermaid", "diagrams", "flowcharts", "visualization", "uml", "documentation"]
+      "keywords": [
+        "mermaid",
+        "diagrams",
+        "flowcharts",
+        "visualization",
+        "uml",
+        "documentation",
+        "architecture",
+        "block-diagrams",
+        "c4",
+        "class-diagrams",
+        "erd",
+        "entity-relationship",
+        "gantt",
+        "git-graph",
+        "kanban",
+        "mindmap",
+        "packet",
+        "pie-chart",
+        "quadrant",
+        "radar",
+        "requirements",
+        "sankey",
+        "sequence",
+        "state-diagrams",
+        "timeline",
+        "treemap",
+        "user-journey",
+        "xy-chart",
+        "zenuml"
+      ]
     }
   ]
 }

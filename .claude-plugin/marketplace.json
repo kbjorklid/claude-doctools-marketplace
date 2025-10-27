@@ -5,9 +5,30 @@
   },
   "metadata": {
     "description": "Marketplace for Kalle Björklid's plugins",
-    "version": "1.2.0"
+    "version": "1.3.0"
   },
   "plugins": [
+    {
+      "name": "mermaid-in-markdown",
+      "description": "Guide encouraging to use data visualzation with Mermaid.js diagrams within Markdown content",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kalle Björklid"
+      },
+      "source": "./plugins/mermaid-in-markdown",
+      "category": "documentation",
+      "keywords": [
+        "mermaid",
+        "markdown",
+        "visualization",
+        "diagrams",
+        "documentation",
+        "flowcharts",
+        "uml",
+        "charts",
+        "mermaid.js"
+      ]
+    },
     {
       "name": "mermaid-diagrams",
       "description": "Expert guide for creating and modifying Mermaid.js diagrams including flowcharts, sequence diagrams, class diagrams, Gantt charts, state diagrams, ERDs, timelines, and more",
@@ -25,28 +46,7 @@
         "uml",
         "documentation",
         "architecture",
-        "block-diagrams",
-        "c4",
-        "class-diagrams",
-        "erd",
-        "entity-relationship",
-        "gantt",
-        "git-graph",
-        "kanban",
-        "mindmap",
-        "packet",
-        "pie-chart",
-        "quadrant",
-        "radar",
-        "requirements",
-        "sankey",
-        "sequence",
-        "state-diagrams",
-        "timeline",
-        "treemap",
-        "user-journey",
-        "xy-chart",
-        "zenuml"
+        "mermaid.js"
       ]
     }
   ]

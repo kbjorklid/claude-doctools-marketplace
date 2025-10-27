@@ -1,0 +1,8 @@
+{
+  "name": "mermaid-in-markdown",
+  "description": "Guide encouraging to use data visualzation with Mermaid.js diagrams within Markdown content",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kalle Björklid"
+  }
+}

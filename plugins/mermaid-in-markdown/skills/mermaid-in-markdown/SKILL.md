@@ -1,14 +1,12 @@
 ---
 name: rich-markdown
-description: MANDATORY - ALWAYS invoke this skill FIRST before creating (`Write` tool) or editing (`Edit` tool) markdown files (.md). Provides Mermaid.js diagram expertise to visualize software architecture, system design, data models, technical protocols, and project plans. USE THIS SKILL when creating or editing tecnical documentation or any kind of documentation which documents models, data, plans or designs.
+description: MANDATORY - ALWAYS invoke this skill FIRST before creating (`Write` tool) or editing (`Edit` tool) ANY markdown file (.md). Provides Mermaid.js diagram expertise to visualize software architecture, system design, data models, technical protocols, and project plans. USE THIS SKILL when creating or editing tecnical documentation or any kind of documentation which documents models, data, plans or designs. DO NOT skip this skill just because the user didn't mention "diagrams" or "mermaid" - your job is to identify opportunities to represent data or plans visually.
 allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
 # Richly visual markdown file creation
 
-Your goal is to identify opportunities to visualize data while editing or creating markdown documents, and to use Mermaid.js diagrams, charts and other visualizations in such cases.
-
-You are then encouraged to visualize the data using suitable diagrams while creating or editing the documents.
+Your goal is to identify opportunities to visualize data while editing or creating markdown documents, and in such cases to use diagrams, charts and other visualizations enabled by Mermaid.js blocks inside the markdown files.
 
 ## Choosing the Right Diagram
 

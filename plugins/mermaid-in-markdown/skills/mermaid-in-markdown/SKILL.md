@@ -1,6 +1,6 @@
 ---
 name: rich-markdown
-description: MANDATORY for creating or editing markdown files (.md). Provides Mermaid.js diagram expertise to visualize software architecture, system design, data models, technical protocols, and project plans. USE THIS SKILL when creating or editing tecnical documentation or any kind of documentation which documents models, data, plans or designs.
+description: MANDATORY - ALWAYS invoke this skill FIRST before creating (`Write` tool) or editing (`Edit` tool) markdown files (.md). Provides Mermaid.js diagram expertise to visualize software architecture, system design, data models, technical protocols, and project plans. USE THIS SKILL when creating or editing tecnical documentation or any kind of documentation which documents models, data, plans or designs.
 allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 

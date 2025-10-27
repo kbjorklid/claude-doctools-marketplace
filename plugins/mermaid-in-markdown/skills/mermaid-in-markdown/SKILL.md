@@ -1,6 +1,6 @@
 ---
 name: rich-markdown
-description: Guide for how to use Mermaid.js diagrams and charts in markdown files to visualize software design and architecture, data models, project management items, data analysis results, plans and ideation results, and technical/network protocols. ALWAYS use when editing or creating markdown / .md files.
+description: MANDATORY for creating or editing markdown files (.md). Provides Mermaid.js diagram expertise to visualize software architecture, system design, data models, technical protocols, and project plans. USE THIS SKILL when creating or editing tecnical documentation or any kind of documentation which documents models, data, plans or designs.
 allowed-tools: Read, Write, Edit, Grep, Glob
 ---
 
@@ -8,13 +8,15 @@ allowed-tools: Read, Write, Edit, Grep, Glob
 
 Your goal is to identify opportunities to visualize data while editing or creating markdown documents, and to use Mermaid.js diagrams, charts and other visualizations in such cases.
 
+You are then encouraged to visualize the data using suitable diagrams while creating or editing the documents.
+
 ## Choosing the Right Diagram
 
 To select the appropriate diagram type for your data or content, follow this decision tree:
 
-1. **Identify the category** that best matches your content type below
-2. **Open the category's documentation** using the links provided
-3. **Choose a specific diagram type** from the available options (if there is one that is applicable to the data you want to visualize)
+1. **Identify the category/categories** that best matches your content type below
+2. **Open the categories' documentation** using the links provided
+3. **Choose a specific diagram types** from the available options (if there is one that is applicable to the data you want to visualize)
 
 ### Diagram Categories
 

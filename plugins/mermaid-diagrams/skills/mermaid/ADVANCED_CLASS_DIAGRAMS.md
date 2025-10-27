@@ -302,7 +302,6 @@ class UserService {
     +id : int #123;readOnly#125;
     +sku : string #123;readOnly, unique#125;
     +tags : List~String~ #123;ordered#125;
-    +login(username: string, password: string) User #123;synchronized#125;
     +getCurrentUser() User #123;cached#125;
 }
 ```
@@ -342,14 +341,9 @@ Use tilde notation `~` to wrap type parameters. Commas do not need escaping.
 ```mermaid
 classDiagram
 class UserService {
-    %% This might fail to render:
-    %% +getUsers() List<User>
-
-    %% This is the RECOMMENDED way for simple generics:
     +getUsers() List~User~
     +findById() Optional~User~
     +getCache() Map~String, User~
-    +getSet() Set~String~
 }
 ```
 
@@ -362,44 +356,14 @@ classDiagram
 class ComplexService {
     %% For nested generics, use HTML entities:
     +getNestedList() List&lt;List&lt;User&gt;&gt;
-    +getGroupedUsers() Map&lt;String, List&lt;User&gt;&gt;
     +getComplexMap() Map&lt;List&lt;String&gt;, List&lt;User&gt;&gt;
 }
 ```
 
 **Quick Decision Rule**:
-- One level? → Use tildes: `List~User~`, `Map~String, User~`
+- One level? → Use tildes: `List~User~`, `Map~String, User~`ja
 - Nested? → Use HTML entities: `List&lt;List&lt;User&gt;&gt;`
 
-### Trap: Namespaces with Relationships
-
-**Problem**: There is a known bug in many Mermaid versions where classes defined in a namespace will appear empty (losing their methods and attributes) if you define a relationship to them after the namespace block.
-
-**Workaround**: Define all relationships inside the namespace block.
-
-```mermaid
-classDiagram
-%% SAFE METHOD:
-namespace Core {
-    class User
-    class Order {
-        +userId
-    }
-    %% Define relationships INSIDE the namespace
-    User "1" -- "0..*" Order : places
-}
-
-%% BUGGY METHOD (Avoid This):
-namespace Core {
-    class User
-    class Order {
-        +userId
-    }
-}
-%% This relationship may cause User and Order
-%% to render as empty boxes
-Core.User "1" -- "0..*" Core.Order : places
-```
 
 ### Trap: UML Constraints with Curly Braces (e.g., {readOnly})
 
@@ -415,10 +379,6 @@ This allows you to add UML constraints to properties and methods:
 classDiagram
 class User {
     +id : int #123;readOnly#125;
-    +createdAt : DateTime #123;readOnly#125;
-    +permissions : List~String~ #123;ordered#125;
-    -password : string
-    +updateEmail(email: string) #123;synchronized#125;
 }
 ```
 

@@ -4,10 +4,14 @@
 
 ```bash
 # Add the marketplace
-/plugin marketplace add https://github.com/kbjorklid/claude-marketplace.git
+/plugin marketplace add https://github.com/kbjorklid/claude-doctools-marketplace.git
 
 # Add the mermaid-diagrams skill
-/plugin install mermaid-diagrams@kbjorklid
+/plugin install mermaid-diagrams@claude-doctools
+
+# Add the maermaid-in-markdown skill
+/plugin install mermaid-in-markdown@claude-doctools
+
 ```
 
 ## Mermaid.js Diagram Creator Skill

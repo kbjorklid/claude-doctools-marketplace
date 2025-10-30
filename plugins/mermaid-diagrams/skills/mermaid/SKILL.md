@@ -46,6 +46,7 @@ You should not deviate from the syntax presented in the documentation: Do not cr
 
 - Read [class diagram](./mermaid_docs/syntax/classDiagram.md)h
 - Read [class diagrams - advanced](./ADVANCED_CLASS_DIAGRAMS.md)
+- See [examples](./examples/CLASS_DIAGRAM.md)
 
 #### Entity Relationship Diagrams (ERD) (`erDiagram`)
 
@@ -54,6 +55,7 @@ You should not deviate from the syntax presented in the documentation: Do not cr
 #### Flowcharts (`flowchart`)
 
 - Read [flowchart](./mermaid_docs/syntax/flowchart.md)
+- See [examples](./examples/FLOWCHART.md)
 
 #### Gantt Charts (`gantt`)
 
@@ -62,6 +64,7 @@ You should not deviate from the syntax presented in the documentation: Do not cr
 #### Git Graphs (`gitGraph`)
 
 - Read [git graph](./mermaid_docs/syntax/gitgraph.md)
+- See [examples](./examples/GIT_GRAPH.md)
 
 #### Kanban Boards (`kanban`)
 
@@ -70,6 +73,7 @@ You should not deviate from the syntax presented in the documentation: Do not cr
 #### Mind Maps (`mindmap`)
 
 - Read [mind map](./mermaid_docs/syntax/mindmap.md)
+- See [examples](./examples/MIND_MAP.md)
 
 #### Packet Diagrams (`packet-beta`)
 
@@ -78,6 +82,7 @@ You should not deviate from the syntax presented in the documentation: Do not cr
 #### Pie Charts (`pie`)
 
 - Read [pie chart](./mermaid_docs/syntax/pie.md)
+- See [examples](./examples/PIE_CHART.md)
 
 #### Quadrant Charts (`quadrantChart`)
 
@@ -98,6 +103,7 @@ You should not deviate from the syntax presented in the documentation: Do not cr
 #### Sequence Diagrams (`sequenceDiagram`)
 
 - Read [sequence diagram](./mermaid_docs/syntax/sequenceDiagram.md)
+- See [examples](./examples/SEQUENCE_DIAGRAM.md)
 
 #### State Diagrams (`stateDiagram-v2`)
 

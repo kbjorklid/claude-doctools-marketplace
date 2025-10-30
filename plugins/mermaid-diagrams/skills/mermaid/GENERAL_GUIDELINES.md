@@ -37,8 +37,8 @@ Mermaid supports numeric entity codes for escaping special characters that might
 #### Usage Examples
 ```mermaid
 sequenceDiagram
-    Alice->John: "A double quote:#quot;"
-    Alice->Bob: "A dec char:#9829;"
+    Alice->John: A semi-colon: #59;
+    Alice->Bob: A dec char:#9829;
 ```
 
 ### Standard HTML Entities
@@ -54,60 +54,8 @@ Some diagrams also support standard HTML entities:
 #### Example in State Diagrams
 ```mermaid
 stateDiagram
-    [*] --> <<choice>>
-    <<choice>> --> <<fork>>
-```
-
----
-
-## ⚠️ Reserved Words That Break Diagrams
-
-### Critical Reserved Words
-
-#### "end" (Case-sensitive)
-The word "end" in lowercase will break flowcharts and sequence diagrams.
-
-**❌ This will break:**
-```mermaid
-flowchart TD
-    A --> end
-```
-
-**✅ Solutions:**
-1. **Capitalize it:**
-```mermaid
-flowchart TD
-    A --> End
-```
-
-2. **Use quotes:**
-```mermaid
-flowchart TD
-    A --> "end"
-```
-
-3. **Use brackets:**
-```mermaid
-flowchart TD
-    A --> [end]
-```
-
-#### Special Characters in Flowcharts
-Letters like "o" or "x" as the first character can create unintended edges.
-
-**❌ This might create unwanted edges:**
-```mermaid
-flowchart TD
-    A --> oB
-    A --> xC
-```
-
-**✅ Solutions:**
-```mermaid
-flowchart TD
-    A --> B  # Remove the prefix
-    A --> "oB"  # Use quotes
-    A --> OB  # Capitalize
+    [*] --> &lt;&lt;choice&gt;&gt;
+    &lt;&lt;choice&gt;&gt; --> &lt;&lt;fork&gt;&gt;
 ```
 
 ---

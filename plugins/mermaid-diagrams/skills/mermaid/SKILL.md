@@ -26,100 +26,99 @@ You should not deviate from the syntax presented in the documentation: Do not cr
 
 2. ALWAYS read [Mermaid.js Documentation Index](./DOC_INDEX.md)
 
-
 4. If you think other documentation is beneficial based on what you see in `DOC_INDEX.md`, use the Task tool with subagent_type=general-purpose to read the file and create a focused report on what's relevant to the current diagram task. The agent should analyze the documentation and extract only information applicable to the specific diagram type or feature you're implementing.
 
 ### Specific diagram type reading instructions
 
-#### Architecture Diagrams
+#### Architecture Diagrams (`architecture-beta`)
 
 - Read [architecture diagram](./mermaid_docs/syntax/architecture.md)
 
-#### Block Diagrams
+#### Block Diagrams (`block`)
 
 - Read [block diagram](./mermaid_docs/syntax/block.md)
 
-#### C4 Diagrams
+#### C4 Diagrams (`c4Diagram`)
 
 - Read [C4 diagram](./mermaid_docs/syntax/c4.md)
 
-#### Class Diagrams
+#### Class Diagrams (`classDiagram`)
 
 - Read [class diagram](./mermaid_docs/syntax/classDiagram.md)h
 - Read [class diagrams - advanced](./ADVANCED_CLASS_DIAGRAMS.md)
 
-#### Entity Relationship Diagrams (ERD)
+#### Entity Relationship Diagrams (ERD) (`erDiagram`)
 
 - Read [entity relationship diagram](./mermaid_docs/syntax/entityRelationshipDiagram.md)
 
-#### Flowcharts
+#### Flowcharts (`flowchart`)
 
 - Read [flowchart](./mermaid_docs/syntax/flowchart.md)
 
-#### Gantt Charts
+#### Gantt Charts (`gantt`)
 
 - Read [Gantt chart](./mermaid_docs/syntax/gantt.md)
 
-#### Git Graphs
+#### Git Graphs (`gitGraph`)
 
 - Read [git graph](./mermaid_docs/syntax/gitgraph.md)
 
-#### Kanban Boards
+#### Kanban Boards (`kanban`)
 
 - Read [kanban board](./mermaid_docs/syntax/kanban.md)
 
-#### Mind Maps
+#### Mind Maps (`mindmap`)
 
 - Read [mind map](./mermaid_docs/syntax/mindmap.md)
 
-#### Packet Diagrams
+#### Packet Diagrams (`packet-beta`)
 
 - Read [packet diagram](./mermaid_docs/syntax/packet.md)
 
-#### Pie Charts
+#### Pie Charts (`pie`)
 
 - Read [pie chart](./mermaid_docs/syntax/pie.md)
 
-#### Quadrant Charts
+#### Quadrant Charts (`quadrantChart`)
 
 - Read [quadrant chart](./mermaid_docs/syntax/quadrantChart.md)
 
-#### Radar Charts
+#### Radar Charts (`radar-beta`)
 
 - Read [radar chart](./mermaid_docs/syntax/radar.md)
 
-#### Requirement Diagrams
+#### Requirement Diagrams (`requirement`)
 
 - Read [requirement diagram](./mermaid_docs/syntax/requirementDiagram.md)
 
-#### Sankey Diagrams
+#### Sankey Diagrams (`sankey`)
 
 - Read [Sankey diagram](./mermaid_docs/syntax/sankey.md)
 
-#### Sequence Diagrams
+#### Sequence Diagrams (`sequenceDiagram`)
 
 - Read [sequence diagram](./mermaid_docs/syntax/sequenceDiagram.md)
 
-#### State Diagrams
+#### State Diagrams (`stateDiagram-v2`)
 
 - Read [state diagram](./mermaid_docs/syntax/stateDiagram.md)
 
-#### Timelines
+#### Timelines (`timeline`)
 
 - Read [timeline](./mermaid_docs/syntax/timeline.md)
 
-#### Treemaps
+#### Treemaps (`treemap-beta`)
 
 - Read [treemap](./mermaid_docs/syntax/treemap.md)
 
-#### User Journey Diagrams
+#### User Journey Diagrams (`journey`)
 
 - Read [user journey diagram](./mermaid_docs/syntax/userJourney.md)
 
-#### XY Charts
+#### XY Charts (`xychart`)
 
 - Read [XY chart](./mermaid_docs/syntax/xyChart.md)
 
-#### ZenUML Sequence Diagrams
+#### ZenUML Sequence Diagrams (`zenuml`)
 
 - Read [ZenUML sequence diagram](./mermaid_docs/syntax/zenuml.md)

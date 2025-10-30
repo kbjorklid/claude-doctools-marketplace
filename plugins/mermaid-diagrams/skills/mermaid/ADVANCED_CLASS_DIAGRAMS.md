@@ -6,25 +6,6 @@ This guide provides practical tips, styling tricks, and workarounds for common p
 
 Mermaid's layout is automatic, which is both a blessing and a curse. You cannot manually drag and drop classes. However, you can influence the layout.
 
-### Try Experimental Layout Engines
-
-The default layout engine is dagre. For complex or "many-to-many" relationships, dagre can create a mess. You can specify a different engine using a configuration directive at the top of your diagram.
-
-- **elk**: Often produces cleaner, more organized layouts, especially for larger diagrams.
-- **cose-bilkent**: A force-directed layout that can be excellent for visualizing networks and complex inter-relationships.
-
-```mermaid
-%%{init: {'class':{'defaultRenderer': 'elk'}}}%%
-classDiagram
-direction TD
-classA <|-- classB
-classA <|-- classC
-classA <|-- classD
-classB --* classE
-classC --* classE
-classD --* classE
-```
-
 ### Influence Layout with Definition Order
 
 The order in which you define relationships can influence the final layout. There's no fixed rule, but this is a good general strategy:
@@ -35,68 +16,9 @@ The order in which you define relationships can influence the final layout. Ther
 
 This "top-down" definition can often help the dagre layout engine make more logical groupings.
 
-## 2. Styling of abstract and interface classes
+## 2. Color usage
 
-Mermaid does not automatically style stereotypes like <<abstract>> or <<interface>>. You must simulate this manually using classDef.
-
-The standard UML practice is to show abstract class names in italics and interface names with a stereotype. You can create classDef styles for these and apply them.
-
-- **font-style: italic** for abstract classes.
-- **font-weight: bold** for interfaces (a common convention).
-
-Here is a practical example:
-
-```mermaid
-classDiagram
-%% Define the styles
-classDef abstract font-style:italic
-classDef interface font-weight:bold,color:#008000
-
-class IStorage {
-    <<interface>>
-    +save(data)
-    +load(id)
-}
-
-class BaseStorage {
-    <<abstract>>
-    #connectionString
-    +load(id)*
-}
-
-class S3Storage {
-    +save(data)
-    +load(id)
-}
-
-class LocalStorage {
-    +save(data)
-    +load(id)
-}
-
-%% Apply the styles
-class IStorage:::interface
-class BaseStorage:::abstract
-
-BaseStorage <|.. IStorage
-S3Storage --|> BaseStorage
-LocalStorage --|> BaseStorage
-```
-
-### Known-to-Work CSS Properties
-
-The documentation is light on which CSS properties are supported. These are known to work reliably with classDef:
-
-- **fill**: The background color of the class box.
-- **color**: The text color.
-- **stroke**: The border color.
-- **stroke-width**: The border thickness.
-- **font-style**: (e.g., italic)
-- **font-weight**: (e.g., bold)
-
-### Color usage
-
-Do not use colors by default. If coloring is explicitly requested, use muted colors.
+Do not use colors by default. If coloring is explicitly requested, use muted colors. You MUST use black text on light background, and white text on dark background.
 
 ## 3. Documenting Relationships: Labels and Cardinality
 
@@ -175,6 +97,7 @@ Mermaid supports three styles for defining attributes and method parameters. **U
 
 **UML Style (Default):**
 ```mermaid
+classDiagram
 class User {
     -id : int
     -name : string
@@ -184,6 +107,7 @@ class User {
 
 **Java/C# Style:**
 ```mermaid
+classDiagram
 class User {
     -int id
     -string name
@@ -193,6 +117,7 @@ class User {
 
 **Name Only:**
 ```mermaid
+classDiagram
 class User {
     -id
     -name
@@ -204,6 +129,7 @@ class User {
 
 **UML Style (Default):**
 ```mermaid
+classDiagram
 class UserService {
     +createUser(name: string, age: int)
     +findById(id: int) User
@@ -212,6 +138,7 @@ class UserService {
 
 **Java/C# Style:**
 ```mermaid
+classDiagram
 class UserService {
     +createUser(string name, int age)
     +findById(int id) User
@@ -220,6 +147,7 @@ class UserService {
 
 **Name Only:**
 ```mermaid
+classDiagram
 class UserService {
     +createUser(name, age)
     +findById(id) User
@@ -248,31 +176,8 @@ class UserService {
 - `*` Abstract (methods only)
 - `$` Static (methods and fields)
 
-### Abstract Methods
 
-```mermaid
-classDiagram
-class Shape {
-    <<abstract>>
-    +draw()*
-    +getArea() float*
-    +resize(factor: float)*
-}
-```
-
-### Static Members
-
-```mermaid
-classDiagram
-class MathUtils {
-    +PI float$
-    +E float$
-    +max(a: int, b: int) int$
-    +min(a: int, b: int) int$
-}
-```
-
-### Combining Visibility and Classifiers
+### Example
 
 ```mermaid
 classDiagram
@@ -316,6 +221,7 @@ class Employee {
     +name : string #123;length > 0#125;
     +age : int #123;age >= 18 and age <= 65#125;
     +salary : decimal #123;salary > 0#125;
+}
 ```
 
 **Typical UML Constraints:**
@@ -386,16 +292,18 @@ class User {
 
 **Problem**: Using class names, methods, or labels with spaces, reserved words (like `end`), or special characters (like `-`) will break the parser.
 
-**Workaround**: Always enclose them in double quotes (`"`).
+**Workaround**: Always enclose them in back ticks (`` ` ``).
 
 ```mermaid
 classDiagram
-class "User Service" {
+class `User Service` {
     +get-user-data()
 }
-"User Service" --> "Order"
+`User Service` --> Order
 
-class "Order" {
-    +calculateTotal()
+namespace `Order.Domain/Entities` {
+    class Order {
+        +calculateTotal()
+    }
 }
 ```

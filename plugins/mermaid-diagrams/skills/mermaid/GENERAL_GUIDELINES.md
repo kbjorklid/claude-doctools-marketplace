@@ -114,7 +114,17 @@ flowchart TD
 
 ## Colors
 
-When selecting colors, make sure text is dark if background is light, and text is light if background is dark. For example, if you have selected a light peach as the color for a diagram element, make sure that the text written in that diagram element is dark (black/close to black).
+When selecting colors, ALWWAYS make sure text is dark if background is light, and text is light if background is dark. For example, if you have selected a light peach as the color for a diagram element, make sure that the text written in that diagram element is dark (black/close to black).
+
+Example of dark text on light background styling:
+
+```
+    style API fill:#C8E6C9,color:#000000
+    style Application fill:#FFCCCC,color:#000000
+    style Core fill:#FFFACD,color:#000000
+    style Infrastructure fill:#B3E5FC,color:#000000
+```
+
 
 ## Syntax guidance
 

@@ -2,7 +2,7 @@
 
 Diagrams for brainstorming, organizing ideas, and documenting requirements and specifications.
 
-### Mind Maps
+## Mind Maps (`mindmap`)
 
 - Brainstorming ideas and concepts
 - Creating hierarchical knowledge structures
@@ -10,7 +10,7 @@ Diagrams for brainstorming, organizing ideas, and documenting requirements and s
 - Planning content structure for documentation
 - Mapping out project requirements or features
 
-### Requirement Diagrams
+## Requirement Diagrams (`requirement`)
 
 - Documenting functional and non-functional requirements
 - Showing requirement dependencies and relationships

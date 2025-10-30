@@ -2,7 +2,7 @@
 
 Diagrams for tracking projects, schedules, tasks, and team workflows over time.
 
-### Gantt Charts
+## Gantt Charts (`gantt`)
 
 - Planning project timelines and schedules
 - Tracking task dependencies and critical paths
@@ -10,7 +10,7 @@ Diagrams for tracking projects, schedules, tasks, and team workflows over time.
 - Managing milestones and deliverables
 - Communicating project progress to stakeholders
 
-### Kanban Boards
+## Kanban Boards (`kanban`)
 
 - Tracking work in progress and task status
 - Visualizing workflow stages (backlog, in progress, done)
@@ -18,7 +18,7 @@ Diagrams for tracking projects, schedules, tasks, and team workflows over time.
 - Showing team capacity and bottlenecks
 - Organizing personal or team task management
 
-### Timelines
+## Timelines (`timeline`)
 
 - Visualizing historical events in chronological order
 - Documenting project milestones and phases

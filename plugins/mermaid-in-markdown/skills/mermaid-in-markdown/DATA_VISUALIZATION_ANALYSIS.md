@@ -2,7 +2,7 @@
 
 Diagrams for presenting quantitative data, comparisons, distributions, and analytical insights.
 
-### Pie Charts
+## Pie Charts (`pie`)
 
 - Showing proportional relationships and percentages
 - Visualizing composition of a whole (budget, time, resources)
@@ -10,7 +10,7 @@ Diagrams for presenting quantitative data, comparisons, distributions, and analy
 - Illustrating survey results or categorical data
 - Comparing relative sizes of segments
 
-### Quadrant Charts
+## Quadrant Charts (`quadrantChart`)
 
 - Prioritizing tasks or features (effort vs. impact, urgency vs. importance)
 - Creating comparison matrices for decision-making
@@ -18,7 +18,10 @@ Diagrams for presenting quantitative data, comparisons, distributions, and analy
 - Performing competitive analysis positioning
 - Illustrating strategic planning frameworks
 
-### Radar Charts
+## Radar Charts (`radar-beta`)
+
+
+This diagram type is in beta testing. DO NOT USE unless explicitly requested by user.
 
 - Comparing multiple variables across different entities
 - Visualizing skill assessments or competency profiles
@@ -26,7 +29,7 @@ Diagrams for presenting quantitative data, comparisons, distributions, and analy
 - Illustrating product feature comparisons
 - Displaying balanced scorecard metrics
 
-### Sankey Diagrams
+## Sankey Diagrams (`sankey`)
 
 - Visualizing flow of resources, energy, or materials
 - Showing budget allocation and spending flows
@@ -34,7 +37,7 @@ Diagrams for presenting quantitative data, comparisons, distributions, and analy
 - Displaying migration patterns or transitions
 - Representing energy consumption or production chains
 
-### XY Charts
+## XY Charts (`xychart`)
 
 - Plotting trends over time or continuous variables
 - Showing correlations between two variables

@@ -2,7 +2,7 @@
 
 Diagrams for documenting processes, user experiences, and business logic flows.
 
-### Flowcharts
+## Flowcharts (`flowchart`)
 
 - Documenting business processes and workflows
 - Illustrating algorithm logic and control flow
@@ -10,7 +10,7 @@ Diagrams for documenting processes, user experiences, and business logic flows.
 - Mapping user flows through applications
 - Designing conditional logic and branching scenarios
 
-### User Journey Diagrams
+## User Journey Diagrams (`journey`)
 
 - Mapping user experience flows and touchpoints
 - Documenting customer interactions across channels

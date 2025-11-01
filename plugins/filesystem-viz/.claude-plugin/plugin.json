@@ -1,0 +1,8 @@
+{
+  "name": "filesystem-viz",
+  "description": "Create ASCII art visualizations of filesystem structures including directory trees, file listings, and hierarchical representations in markdown (.md) documentation",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kalle Björklid"
+  }
+}

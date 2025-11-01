@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Marketplace for Kalle Björklid's plugins",
-    "version": "1.5.0"
+    "version": "2.0.0"
   },
   "plugins": [
     {
@@ -47,6 +47,26 @@
         "documentation",
         "architecture",
         "mermaid.js"
+      ]
+    },
+    {
+      "name": "filesystem-viz",
+      "description": "Create ASCII art visualizations of filesystem structures including directory trees, file listings, and hierarchical representations in markdown (.md) documentation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Kalle Björklid"
+      },
+      "source": "./plugins/filesystem-viz",
+      "category": "documentation",
+      "keywords": [
+        "filesystem",
+        "directory",
+        "tree",
+        "visualization",
+        "ASCII",
+        "documentation",
+        "structure",
+        "hierarchy"
       ]
     }
   ]
